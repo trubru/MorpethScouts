@@ -5,10 +5,16 @@ Scout Teal      #00A794
 Black           #000000
 Dark Grey       #707070
 Light Grey      #F5F5F5
-White           #FFFFFF*/
- html {
+White           #FFFFFF
+Beavers         #006CDF
+Cubs            #23A956
+Scouts          #003A44
+
+*/
+html {
       scroll-behavior: smooth;
     }
+
 body {
     margin: 0;
     font-size: 19px;
@@ -21,19 +27,24 @@ h1 {
 h2 {
     font-size: 30px;
 }
-footer {
-    font-size: 14px;
-}
 
 a {
     color: #7413dc;
+    
+    text-decoration: none;
 }
-a:hover,
-a:focus {
+a:hover {
     color: #460e83;
 }
-a:active {
+a:active,
+a:focus {
     background: orange;
+}
+
+dd {
+	padding: 1.25em 0 0.5em 0;
+	margin: -2.60em 0 0 170px;
+	min-height: 1.5em;
 }
 
 
@@ -43,6 +54,20 @@ main {
     margin: 0 auto;
     padding: 0 20px 20px 20px;
 }
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
 
 #HeaderInner {
     display: flex;
@@ -136,30 +161,70 @@ main {
     margin: 50px 0;
 }
 
-
+/* TODO: Redo with flexbox */
 .SectionCards {
     
-    overflow: hidden; /* TODO: clear float properly */
-    color: #fff;
-    background-color: #7413dc;
+    /*overflow: hidden;*/ /* TODO: clear float properly */
 }
 .SectionCards ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .SectionCards ul li {
     text-align: center;
+    width: 32%;
+}
+.SectionCards ul li a {
     box-sizing: border-box;
+    display: block;
+    min-height: 285px;
     padding: 20px;
-    margin: 0;
-    float: left;
-    width: 33.33%;
+    background-color: #7413dc;
+    color: #fff;
+    text-decoration: none;
+}
+.SectionCards ul li a:hover {
+    opacity: 0.8;
+}
+
+.SectionLogo {
+    height: 40px;
+}
+
+.SectionCards ul li.Beavers a {
+    background-color: #006CDF;
+}
+.SectionCards ul li.Cubs a {
+    background-color: #23A956;
+}
+.SectionCards ul li.Scouts a {
+    background-color: #003A44;
 }
 
 .CallOut {
     padding-left: 10px;
     border-left: 1px solid #00A794;
+}
+
+#Mask {
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 2;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */   
+}
+
+#PopupContent {
+    margin: 50px auto 0 auto;
+    padding: 50px;
+    width: 800px;
+    background: #fff; 
 }
 
 
@@ -185,6 +250,12 @@ main {
 
 }
 
+@media screen and (max-width: 860px) {
+    .SectionCards {
+        font-size: 0.85em;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .Hero {
         background-size: cover;
@@ -197,6 +268,19 @@ main {
         padding: 0 15px;
         background-color: inherit;
         opacity: 0.8;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .SectionCards ul {
+        display: block;   
+    }
+    .SectionCards ul li {
+        width: auto;
+        margin: 15px 0;
+    }
+    .SectionCards ul li a {
+        min-height: auto;
     }
 }
 @media screen and (max-width: 650px) {

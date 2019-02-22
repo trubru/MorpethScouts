@@ -22,16 +22,16 @@
                 </div>
                 <div id="MenuWrapper" class="HideTheMenu">                
                     <div id="ToggleMenu">
-                        <a href="#" id="ShowMenu" onclick="showMenu();">Show Menu</a>
-                        <a href="#" id="HideMenu" onclick="hideMenu();">Hide Menu</a>
+                        <a href="#" id="ShowMenu">Show Menu</a>
+                        <a href="#" id="HideMenu">Hide Menu</a>
                     </div>
                     <nav id="MainMenu">
                         <ul tabindex="-1">
-                            <li><a href="#WhatWeDo">What we do</a></li>
-                            <li><a href="#Sections">Our sections</a></li>
-                            <li><a href="#Volunteering">Volunteering</a></li>
-                            <!--<li><a href="#Fundraising">Fundraising</a></li>-->
-                            <li><a href="#Contact">Contact us</a></li>
+                            <li><a href="#WhatWeDo" class="MenuItem">What we do</a></li>
+                            <li><a href="#Sections" class="MenuItem">Our sections</a></li>
+                            <li><a href="#Volunteering" class="MenuItem">Volunteering</a></li>
+                            <!--<li><a href="#Fundraising" class="MenuItem">Fundraising</a></li>-->
+                            <li><a href="#Contact" class="MenuItem">Contact us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +41,7 @@
             <section>
                 <div class="Hero">
                     <div class="Text">
-                        <p>The 4<sup>th</sup> Morpeth Scout Group gives over 250 young people the oportunity to enjoy fun and adventure while developing the skills they need for life.</p>
+                        <p>The 4<sup>th</sup> Morpeth Scout Group gives young people the oportunity to enjoy fun and adventure while developing the skills they need for life.</p>
                         <p>#SkillsForLife</p>
                     </div>
                 </div>
@@ -49,47 +49,172 @@
             
             <section>
             <h1 id="WhatWeDo">What we do</h1>
-                <p>As Scouts, we prepare young people with skills for life. </p>
-                <p>Each week, the 4<sup>th</sup> Morpeth Scout Group gives over 250 young people in Morpeth and Pegswood the opportunity to enjoy fun and adventure while developing the skills they need to succeed, now and in the future. We’re talking about teamwork, leadership and resilience – skills that have helped Scouts become everything from teachers and social workers to astronauts and Olympians.</p>
-                <p>We believe in bringing people together. We celebrate diversity and stand against intolerance, always.</p>
-                <p>We are part of a worldwide movement, creating stronger communities and inspiring positive futures.</p>
+
+                
+                <p>4th Morpeth is a very popular Scout Group with over 250 young members in 3 Beaver Colonies, 4 Cub Packs and 4 Scout Troops. One of our Troops is due to be formed as a Sea Scout Troop, this is just a Scout Troop with a nautical theme and more water-based activities.</p>
+
             </section>
                         
             <section>
                 <h1 id="Sections">Our sections</h1>
                 <div class="SectionCards">
                     <ul>
-                        <li>
-                            <h2>Beavers</h2>
-                            <p>6-8 years</p>
-                            <p>Make friends and try new indoor and outdoor activities</p>
-                            <dl>
-                                <dt>Monday</dt>
-                                <dd>5.30pm - 6.30pm at Morpeth HQ</dd>
-                                <dd>5.30pm - 6.30pm at Pegswood Primary School</dd>
-                            </dl>
+                        <li class="Beavers">
+                            <a href="#" id="DisplayBeaversPopup" data-popup="BeaversPopup">
+                                <h2><img src="images/beavers-section-logo-white.png" alt="Beavers" class="SectionLogo"></h2>
+                                <p>Ages 6-8 years</p>
+                                <p>Make friends and try new indoor and outdoor activities</p>
+                            </a>
                         </li>
-                        <li>
-                            <h2>Cubs</h2>
-                            <p>8-10½ years</p>
-                            <p>Learn practical skills while having adventures with friends</p>
-                            <dl>
-                                <dt>Monday</dt>
-                                <dd>5.30pm - 6.30pm at Morpeth HQ</dd>
-                                <dd>5.30pm - 6.30pm at Pegswood Primary School</dd>
-                            </dl>
+                        <li class="Cubs">
+                            <a href="#" id="DisplayCubsPopup" data-popup="CubsPopup">
+                                <h2><img src="images/cubs-section-logo-white.png" alt="Cubs" class="SectionLogo"></h2>
+                                <p>Ages 8-10½ years</p>
+                                <p>Learn practical skills while having adventures with friends</p>
+                            </a>
                         </li>
-                        <li>
-                            <h2>Scouts</h2>
-                            <p>10½-14 years</p>
-                            <p>Build confidence, resilience and a sense of adventure</p>
-                            <dl>
-                                <dt>Monday</dt>
-                                <dd>5.30pm - 6.30pm at Morpeth HQ</dd>
-                                <dd>5.30pm - 6.30pm at Pegswood Primary School</dd>
-                            </dl>
+                        <li class="Scouts">
+                            <a href="#" id="DisplayScoutsPopup" data-popup="ScoutsPopup">
+                                <h2><img src="images/scouts-section-logo-white.png" alt="Scouts" class="SectionLogo"></h2>
+                                <p>Ages 10½-14 years</p>
+                                <p>Build confidence, resilience and a sense of adventure</p>
+                            </a>
                         </li>
                     </ul>   
+                </div>
+                <h2>Other local groups</h2>
+                <p>There is a another Scout Group in Morpeth called 6th Morpeth who meet at the Methodist Church Hall. They have Beavers, Cubs and Scouts on both Wednesdays and Thursdays. We can put you in touch with them.</p>
+                <p>There are further Scout Groups in Alnwick, Ashington, Ellington, Felton, Guidepost, Ponteland, Stakeford and Stannington.</p>
+            </section>
+            
+            <section id="Popup" style="display: none;" tabindex="-1">                
+                <div id="Mask">
+                    <div id="PopupContent">
+                        <div id="BeaversPopup" class="PopupSection">
+                            <h3>Beavers</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Location</th>
+                                        <th>Time</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monday Beaver Scout Colony</td>
+                                        <td>HQ, Staithes Lane</td>
+                                        <td>1800 until 1900</td>
+                                        <td>Waiting List</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pegswood (Monday) Beaver Scout Colony</td>
+                                        <td>Pegswood Primary School</td>
+                                        <td>1730 until 1830</td>
+                                        <td>Spaces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday Beaver Scout Colony</td>
+                                        <td>HQ, Staithes Lane</td>
+                                        <td>1730 until 1830</td>
+                                        <td>Waiting List</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div id="CubsPopup" class="PopupSection">
+                            <h3>Cubs</h3>  
+                            
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Location</th>
+                                        <th>Time</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pegswood (Monday) Cub Scout Pack</td>
+                                        <td>Pegswood Primary School</td>
+                                        <td>1745 until 1900</td>
+                                        <td>Spaces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tuesday Cub Scout Pack</td>
+                                        <td>HQ, Staithes Lane</td>
+                                        <td>1830 until 2000</td>
+                                        <td>Limited spaces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thursday Cub Scout Pack</td>
+                                        <td>HQ, Staithes Lane</td>
+                                        <td>1800 until 1915</td>
+                                        <td>Limited spaces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Friday Cub Scout Pack</td>
+                                        <td>HQ, Staithes Lane</td>
+                                        <td>1845 until 2015</td>
+                                        <td>Limited spaces</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div id="ScoutsPopup" class="PopupSection">
+                            <h3>Scouts</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Location</th>
+                                        <th>Time</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Matobo (Monday) Scout Troop</td>
+                                        <td>HQ, Staithes Lane</td>
+                                        <td>1915 until 2100</td>
+                                        <td>Long Waiting List</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Portland (Monday) Sea Scout Troop (Starts May 2019)</td>
+                                        <td>Pegswood Primary School</td>
+                                        <td>1845 until 2015</td>
+                                        <td>Limited spaces</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mafeking (Wednesday) Scout Troop</td>
+                                        <td>HQ, Staithes Lane</td>
+                                        <td>1915 until 2100</td>
+                                        <td>Long Waiting List</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kudu (Thursday) Scout Troop</td>
+                                        <td>HQ, Staithes Lane</td>
+                                        <td>1930 until 2100</td>
+                                        <td>Long Waiting List</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> 
+                        
+                        
+                        <div class="CallOut Notes">
+                            <h4>Notes</h4>
+                            <dl>
+                                <dt>Spaces</dt><dd>can start immediately</dd>
+                                <dt>Limited spaces</dt><dd>may be able to start depending on age, when you want to join etc</dd>
+                                <dt>Waiting list</dt><dd>Section is full, we have a waiting list of up to 6 months</dd>
+                                <dt>Long Waiting list</dt><dd>Section is full, we have a waiting list of greater than 6 months</dd>
+                            </dl>
+                        </div>
+                        <a href="#" onclick="HidePopup();">Close</a>
+                    </div>
                 </div>
             </section>
                 
@@ -131,23 +256,21 @@
         </footer>
         <footer id="MainFooter">
             <div id="FooterLogo"><img src="images/scouts_logo_white.png" alt="Scouts"></div>
-            <p>© Copyright The Scout Association 2018. All Rights Reserved.</p>
+            <p>© Copyright 4th Morpeth Scout Group 2019. All Rights Reserved.</p>
             <p>Charity number: 1070498 (England and Wales). </p>
+            <p>Website by <a href="https://twitter.com/trubru">@trubru</a></p>
         </footer>
         
-        <script>
+        <script type="text/javascript" src="scripts/menu.js"></script>
+        <script type="text/javascript" src="scripts/popup.js"></script>
+        <script>            
+            ConfigureMenuItems();
+            ConfigureShowHideMenuButtons();    
             
-        function showMenu() {            
-            document.getElementById("MenuWrapper").classList.add("ShowTheMenu");
-            document.getElementById("MenuWrapper").classList.remove("HideTheMenu");
-            document.getElementById("MainMenu").focus();
-        }
-            
-        function hideMenu() {
-           document.getElementById("MenuWrapper").classList.remove("ShowTheMenu");
-            document.getElementById("MenuWrapper").classList.add("HideTheMenu");
-            document.getElementById("ShowMenu").focus();
-        }
+            HidePopup;
+            ConfigurePopupDisplayItem("DisplayBeaversPopup", "BeaversPopup");
+            ConfigurePopupDisplayItem("DisplayCubsPopup", "CubsPopup");
+            ConfigurePopupDisplayItem("DisplayScoutsPopup", "ScoutsPopup");
         </script>
     </body>
 </html>
