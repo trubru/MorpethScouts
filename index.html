@@ -58,11 +58,15 @@
             <section>
                 <h1 id="Sections">Our sections</h1>
                 
-                <div>
-                    <h2>Morpeth HQ</h2>
-                    <p>Staithes Lane<br>
-                        Morpeth<br>
-                        NE61 1TD</p>
+                <!--<div>
+                    <div class="MapHeader Hq">
+                        <div class="MapHeaderInner">
+                            <h2>Morpeth HQ</h2>
+                            <p>Staithes Lane<br>
+                                Morpeth<br>
+                                NE61 1TD</p>
+                        </div>
+                    </div>
                     <table class="SectionTable">
                         <thead>
                             <tr>
@@ -129,10 +133,14 @@
                     </table>
                 </div>
                 <div>
-                    <h2>Pegswood Primary School</h2>
-                    <p>Longhirst Road<br>
-                        Pegswood<br>
-                        Morpeth<br>NE61 6XG</p>
+                    <div class="MapHeader Pegswood">
+                        <div class="MapHeaderInner">
+                            <h2>Pegswood Primary School</h2>
+                            <p>Longhirst Road<br>
+                                Pegswood<br>
+                                Morpeth<br>NE61 6XG</p>
+                        </div>
+                    </div>
                     <table class="SectionTable">
                         <thead>
                             <tr>
@@ -169,6 +177,44 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                -->
+                
+                <!-- prototype code -->
+                <table class="SectionTable" style="border-spacing: 0; margin: 20px 0 0 0 ;">
+                    <thead>
+                        <tr>
+                            <th class="Beavers" scope="col">
+                                <p><img src="images/beavers-section-logo-white.png" alt="Beavers" class="SectionLogo"></p>
+                                <p>Ages 6-8 years</p>
+                            </th>
+                            <th class="Cubs" scope="col" style="background-color: #ccc">                                    
+                                <p><img src="images/cubs-section-logo-white.png" alt="Cubs" class="SectionLogo"></p>
+                                <p>Ages 8-10½ years</p>
+                            </th>
+                            <th class="Scouts" scope="col"  style="background-color: #ccc">
+                                <p><img src="images/scouts-section-logo-white.png" alt="Scouts" class="SectionLogo"></p>
+                                <p>Ages 10½-14 years</p>                             
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+                <div style="border: 3px solid #006CDF; padding: 0 25px 25px 25px;">
+                    <p><strong>Make friends and try new indoor and outdoor activities</strong></p>
+                    <dl class="SectionList">
+                        <dt>Monday Beaver Scout Colony</dt>
+                        <dd>6.00pm until 7.00pm</dd>
+                        <dd>HQ, Staithes Lane</dd>	                        
+                        <dd>Waiting List</dd>
+                        <dt>Pegswood (Monday) Beaver Scout Colony</dt>
+                        <dd>5.30pm until 6.30pm</dd>
+                        <dd>Pegswood Primary School</dd>	                        
+                        <dd>Spaces</dd>
+                        <dt>Friday Beaver Scout Colony</dt>
+                        <dd>5.30pm until 6.30pm</dd>
+                        <dd>HQ, Staithes Lane</dd>	                        
+                        <dd>Waiting List</dd>                        
+                    </dl>
                 </div>
                 
                 <div class="CallOut">
@@ -235,7 +281,12 @@
         <script type="text/javascript" src="scripts/popup.js"></script>
         <script>            
             ConfigureMenuItems();
-            ConfigureShowHideMenuButtons();   
+            ConfigureShowHideMenuButtons();    
+            
+            HidePopup;
+            ConfigurePopupDisplayItem("DisplayBeaversPopup", "BeaversPopup");
+            ConfigurePopupDisplayItem("DisplayCubsPopup", "CubsPopup");
+            ConfigurePopupDisplayItem("DisplayScoutsPopup", "ScoutsPopup");
         </script>
     </body>
 </html>
