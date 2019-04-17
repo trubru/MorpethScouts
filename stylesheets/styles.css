@@ -41,6 +41,20 @@ a:focus {
     background: orange;
 }
 
+
+                        table {
+                            width: 100%;  
+                            border-spacing: 0; 
+                        }
+                        td,
+                        th {
+                            padding: 0.5em;
+                            
+                        }
+                        tr td {
+                            border-top: 1px solid #ccc;   
+                        }
+
 dd {
 	padding: 1.25em 0 0.5em 0;
 	margin: -2.60em 0 0 170px;
@@ -193,6 +207,19 @@ footer a:hover {
     border-bottom: 1px solid #ccc;
 }
 
+    .SectionList dt {
+        display: block;
+        font-weight: bold;
+        margin: 1em 0 0.5em 0;
+        padding: 0;
+    }
+    .SectionList dd {
+        display: block;
+        margin: 0.25em 0;
+        padding: 0;
+
+    }
+
 .CallOut {
     padding-left: 10px;
     border-left: 1px solid #00A794;
@@ -214,6 +241,29 @@ footer a:hover {
     padding: 50px;
     width: 800px;
     background: #fff; 
+}
+
+.MapHeader.Hq {
+    background-image: url(../images/map_hq.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+        
+}
+
+.MapHeader.Pegswood {
+    background-image: url(../images/map_pegswood.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+        
+}
+
+.MapHeaderInner {
+    width: 40%;
+    background: #fff;
+    overflow: hidden;
+    padding: 0 1em;
 }
 
 
