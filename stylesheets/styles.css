@@ -176,36 +176,83 @@ footer a:hover {
 }
 
 
-.SectionLogo {
+.SectionCards {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0; 
+    list-style: none;
+}
+
+.SectionCards li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.SectionCards .SectionLogo {
     height: 40px;
 }
-.SectionTable {
-    width: 100%;
-      /*  border-spacing: 0.5em;*/
-}
-.SectionTable th {
-    background-color: #7413dc;
+
+
+.SectionCards a { 
+    display: block;
+    padding: 1.5em 0;
+    background-color: #ccc;    
     color: #fff;
-    padding: 0.5em; 
 }
-    
-.SectionTable th.Beavers  {
+
+.SectionCards .Beavers a.Active,
+.SectionCards .Beavers a:hover,
+.SectionCards .Beavers a:active {
     background-color: #006CDF;
 }
-.SectionTable th.Cubs  {
+
+.SectionCards .Cubs a.Active,
+.SectionCards .Cubs a:hover,
+.SectionCards .Cubs a:active  {
     background-color: #23A956;
 }
-.SectionTable th.Scouts {
+
+.SectionCards .Scouts a.Active,
+.SectionCards .Scouts a:hover,
+.SectionCards .Scouts a:active  {
     background-color: #003A44;
 }
 
-.SectionTable td {
-    padding: 0.5em; 
+/* TODO: Explorers, Network */
+
+.SectionCards.ThreeColumn li {
+    width: 33.33%;
 }
 
-.SectionTable tbody td {
-    border-bottom: 1px solid #ccc;
+.SectionCards.FourColumn li {
+    width: 25%;    
 }
+
+.SectionCards.FiveColumn li {
+    width: 20%;
+}
+
+
+.SectionInformation {
+    border-width: 3px;
+    border-style: solid;
+    padding: 0 25px 25px 25px;
+}
+
+.SectionInformation.Beavers  {
+    border-color: #006CDF;
+}
+
+.SectionInformation.Cubs  {
+    border-color: #23A956;
+}
+
+.SectionInformation.Scouts {
+    border-color: #003A44;
+}
+
+/* TODO: Explorers, Network */
 
     .SectionList dt {
         display: block;
@@ -223,24 +270,6 @@ footer a:hover {
 .CallOut {
     padding-left: 10px;
     border-left: 1px solid #00A794;
-}
-
-#Mask {
-    position: fixed;
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
-    left: 0; 
-    z-index: 2;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */   
-}
-
-#PopupContent {
-    margin: 50px auto 0 auto;
-    padding: 50px;
-    width: 800px;
-    background: #fff; 
 }
 
 .MapHeader.Hq {
