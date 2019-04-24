@@ -149,31 +149,30 @@ footer a:hover {
 }
 
 .Hero {
-    min-height: 565px;
+    padding: 50px;
+    color: #fff;   
+        
     background-image: url(../images/cubs.jpg);
-    background-size: 50%;
-    background-position: center right;
+    background-size: 100%;
+    background-position: center left;
     background-repeat: no-repeat;
-    background-color: #7413DC;
-    color: #fff;
-}
-.Hero h1 {
-    color: #fff;
 }
 .Hero.Volunteer{
     background-image: url(../images/leader.jpg);
 
 }
+
 .Hero .Text{
-    overflow: hidden;
-    padding: 0 50px;
-    box-sizing: border-box;
-    width: 50%;
-    font-size: 2em;
+    mix-blend-mode: screen;
+    box-sizing: content-box;
+    padding: 20px;
+    max-width: 50%;
+    background-color: #fff;
+    color: #000;
+    font-size: 4em;
+    font-weight: 900;
 }
-.Hero .Text p {
-    margin: 50px 0;
-}
+
 
 
 .SectionCards {
@@ -325,7 +324,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 800px) {
-    .Hero {
+ /*   .Hero {
         background-size: cover;
         position: relative;
     }
@@ -336,7 +335,7 @@ footer a:hover {
         padding: 0 15px;
         background-color: inherit;
         opacity: 0.8;
-    }
+    }*/
 }
 
 @media screen and (max-width: 700px) {
@@ -356,12 +355,12 @@ footer a:hover {
         font-size: 0.8em;
     }
     
-    .Hero .Text{
+/*    .Hero .Text{
         padding: 0 15px;
     }
     .Hero .Text p {
         margin: 15px 0;
-    }
+    }*/
 }
 
 @media screen and (max-width: 550px) {
@@ -370,7 +369,7 @@ footer a:hover {
         padding: 0 10px;
     }
     
-    .Hero {
+ /*   .Hero {
         min-height: 300px;
         background-position: bottom right;
     }
@@ -381,7 +380,7 @@ footer a:hover {
     
     .Hero .Text{
         font-size: 1em;
-    }
+    }*/
     
     #HeaderInner {
         position: relative;
