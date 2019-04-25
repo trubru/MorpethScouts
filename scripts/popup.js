@@ -2,11 +2,16 @@ function ConfigurePopupDisplayItem(buttonId, sectionToDisplay) {
     var element = document.getElementById(buttonId);
     
     element.addEventListener("click", function(event){ 
+    alert(element.getAttribute("data-popup"));
         HidePopupSections();
-        document.getElementById("Popup").style.display="block";           
+        //document.getElementById("Popup").style.display="block";           
         document.getElementById(element.getAttribute("data-popup")).style.display="block";    
-        document.getElementById("Popup").focus();       
+        document.getElementById(element.getAttribute("data-popup")).focus();       
         event.preventDefault();
+        
+        
+        // Remove classes from all section buttons
+        // Add active state to selected section button
     });    
 }
 
@@ -20,7 +25,6 @@ function HidePopupSections() {
 
 function HidePopup(){    
     HidePopupSections();
-    document.getElementById("Popup").style.display="none"; 
     document.getElementById("Sections").scrollIntoView();   
     event.preventDefault();
 }
