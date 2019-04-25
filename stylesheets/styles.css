@@ -150,25 +150,24 @@ footer a:hover {
 
 .Hero {
     padding: 50px;
-    color: #fff;   
-        
-    background-image: url(../images/cubs.jpg);
-    background-size: 100%;
+    color: #fff;           
+    background-image: url(../images/cub-carrying-leaves.jpg);
+    background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
 }
 .Hero.Volunteer{
-    background-image: url(../images/leader.jpg);
-
+    background-image: url(../images/explorer-belt-expedition-3.jpg);
 }
 
 .Hero .Text{
+    display: inline-block;
     mix-blend-mode: screen;
     box-sizing: content-box;
     padding: 20px;
-    max-width: 50%;
     background-color: #fff;
     color: #000;
+    line-height: 1;
     font-size: 4em;
     font-weight: 900;
 }
@@ -323,21 +322,6 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 800px) {
- /*   .Hero {
-        background-size: cover;
-        position: relative;
-    }
-    .Hero .Text{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding: 0 15px;
-        background-color: inherit;
-        opacity: 0.8;
-    }*/
-}
-
 @media screen and (max-width: 700px) {
     .SectionCards ul {
         display: block;   
@@ -354,13 +338,6 @@ footer a:hover {
     #HeaderInner nav ul {
         font-size: 0.8em;
     }
-    
-/*    .Hero .Text{
-        padding: 0 15px;
-    }
-    .Hero .Text p {
-        margin: 15px 0;
-    }*/
 }
 
 @media screen and (max-width: 550px) {
@@ -368,19 +345,6 @@ footer a:hover {
     main {
         padding: 0 10px;
     }
-    
- /*   .Hero {
-        min-height: 300px;
-        background-position: bottom right;
-    }
-    
-    .Hero.Volunteer{
-        background-position: center right;
-    }
-    
-    .Hero .Text{
-        font-size: 1em;
-    }*/
     
     #HeaderInner {
         position: relative;
