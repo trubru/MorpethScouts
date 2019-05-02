@@ -1,3 +1,5 @@
+/* Pioneer Scout Website Design System */
+
 /*
 https://scoutsbrand.org.uk/catalogue/item/digital-style-guide
 Scout Purple    #7413DC
@@ -20,10 +22,12 @@ body {
     font-size: 19px;
     font-family: "Nunito Sans", sans-serif;
 }
+
 h1 {
     font-size: 40px;
     color: #7413dc;
 }
+
 h2 {
     font-size: 30px;
 }
@@ -33,34 +37,36 @@ a {
     
     text-decoration: none;
 }
-a:hover {
-    color: #460e83;
-}
-a:active,
-a:focus {
-    background: orange;
+
+    a:hover {
+        color: #460e83;
+    }
+
+    a:active,
+    a:focus {
+        background: orange;
+    }
+
+table {
+    width: 100%;  
+    border-spacing: 0; 
 }
 
+    td,
+    th {
+        padding: 0.5em;
 
-                        table {
-                            width: 100%;  
-                            border-spacing: 0; 
-                        }
-                        td,
-                        th {
-                            padding: 0.5em;
-                            
-                        }
-                        tr td {
-                            border-top: 1px solid #ccc;   
-                        }
+    }
+
+    tr td {
+        border-top: 1px solid #ccc;   
+    }
 
 dd {
 	padding: 1.25em 0 0.5em 0;
 	margin: -2.60em 0 0 170px;
 	min-height: 1.5em;
 }
-
 
 main {
     position: relative;
@@ -73,29 +79,30 @@ footer {
     text-align: center;
     font-size: 14px;
 }
-footer a {
-    color: #fff;
-}
-footer a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
 
+    footer a {
+        color: #fff;
+    }
 
+    footer a:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
 
 #HeaderInner {
     display: flex;
     width: 1020px;    
     margin: 10px auto;
 }
+
 #MenuWrapper {
     align-self: flex-end;
 }
 
-
 #MainHeader #Logo {
   width: 220px;
 }
+
 #MainHeader #Logo img {
     height: 100px;
 }
@@ -107,6 +114,7 @@ footer a:hover {
 #HeaderInner nav {
     flex: 1;
 }
+
 #HeaderInner nav ul {
     display: flex;
     justify-content: flex-end;
@@ -114,10 +122,12 @@ footer a:hover {
     padding: 0;
     list-style: none;
 }
+
 #HeaderInner nav ul li {
     margin: 0;
     padding: 0;
 }
+
 #HeaderInner nav ul li a {
     display: block;
     padding: 10px;
@@ -141,9 +151,11 @@ footer a:hover {
     background: #7413DC;
     color: #fff;
 }
+
 #FooterLogo {
     text-align: center;
 }
+
 #FooterLogo img {
     width: 100px;
 }
@@ -156,23 +168,22 @@ footer a:hover {
     background-position: center left;
     background-repeat: no-repeat;
 }
-.Hero.Volunteer{
-    background-image: url(../images/explorer-belt-expedition-3.jpg);
-}
 
-.Hero .Text{
-    display: inline-block;
-    mix-blend-mode: screen;
-    box-sizing: content-box;
-    padding: 20px;
-    background-color: #fff;
-    color: #000;
-    line-height: 1;
-    font-size: 4em;
-    font-weight: 900;
-}
+    .Hero.Volunteer{
+        background-image: url(../images/explorer-belt-expedition-3.jpg);
+    }
 
-
+    .Hero .Text{
+        display: inline-block;
+        mix-blend-mode: screen;
+        box-sizing: content-box;
+        padding: 20px;
+        background-color: #fff;
+        color: #000;
+        line-height: 1;
+        font-size: 4em;
+        font-weight: 900;
+    }
 
 .SectionCards {
     display: flex;
@@ -266,6 +277,7 @@ footer a:hover {
     }
 
 .CallOut {
+    font-size: 0.8em;
     padding-left: 10px;
     border-left: 1px solid #00A794;
 }
@@ -349,7 +361,7 @@ footer a:hover {
     #HeaderInner {
         position: relative;
         width: auto;
-        display: flex;
+      /*  display: flex;*/
     }
     #HeaderInner #Logo {
         align-self: center;
@@ -360,17 +372,17 @@ footer a:hover {
             height: 60px;
         }
     #MenuWrapper {
-        width: 50%;
         position: relative;
-        align-self: auto;
-        padding: 10px 10px 0 0;
+        /*width: 50%;*/
+       /* align-self: auto;
+        padding: 10px 10px 0 0;*/
     }
     #MenuWrapper nav {
-        position: absolute;
+       /* position: absolute;
         top: 55px;
         right: 0;
-        z-index: 1;
-        background-color: aliceblue;
+        z-index: 1;*/
+        background-color: #00A794;
     }
     
     #HeaderInner nav ul {
@@ -378,12 +390,27 @@ footer a:hover {
         margin-bottom: 0;
         font-size: 1em;
     }
+    
     #HeaderInner nav ul li a {
         display: block;
-        border: 1px solid;
+        border-bottom: 1px solid #fff;
+        color: #fff;
     }
+    
+    #HeaderInner nav ul li a:hover,
+    #HeaderInner nav ul li a:focus {
+        opacity: 0.7;   
+    }
+    
+    #HeaderInner nav ul li:last-child a {
+        border: 0 none;    
+    }
+    
     #ToggleMenu {
-        text-align: right;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 0.8em;
     }
     #ShowMenu,
     #HideMenu {  
@@ -413,12 +440,10 @@ footer a:hover {
         transform: rotate(-45deg);
         text-decoration: none;
     }*/
-    #HideMenu:before {        
-        
-        top: 20px;
-        
+   /* #HideMenu:before {        
+        top: 20px;        
         border-width: 2px 2px 0 0;     
-    }
+    }*/
     
 
     #ToggleMenu {
@@ -426,23 +451,35 @@ footer a:hover {
     }
     
     .ShowTheMenu #MainMenu {
-        display: block;
+        max-height: 500px;
+        transition: max-height 0.25s ease-in;
     }
+    
     .ShowTheMenu #HideMenu {
         display: inline-block;
     }
+    
     .ShowTheMenu #ShowMenu {
         display: none;
     }
     
     .HideTheMenu #MainMenu {
-        display: none;
+        max-height: 0;
+        /*transition: max-height 0.15s ease-out;*/
+        overflow: hidden;
+        background: #d5d5d5;
     }
+    
     .HideTheMenu #HideMenu {
         display: none;
     }
+    
     .HideTheMenu #ShowMenu {
         display: inline-block;
+    }
+    
+    .SectionCards .SectionLogo {
+        height: 20px;
     }
     
 }

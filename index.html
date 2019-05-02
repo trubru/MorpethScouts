@@ -14,13 +14,13 @@
     </head>
     
     <body>
-
+        
         <header id="MainHeader">
             <div id="HeaderInner">
-                <div id="Logo">
-                    <img src="images/logo_purple_linear.png" alt="Scouts 4th Morpeth">
-                </div>
-                <div id="MenuWrapper" class="HideTheMenu">                
+                <div id="MenuWrapper" class="HideTheMenu">     
+                    <div id="Logo">
+                        <img src="images/logo_purple_linear.png" alt="Scouts 4th Morpeth">
+                    </div>           
                     <div id="ToggleMenu">
                         <a href="#" id="ShowMenu">Show Menu</a>
                         <a href="#" id="HideMenu">Hide Menu</a>
@@ -30,14 +30,15 @@
                             <li><a href="#WhatWeDo" class="MenuItem">What we do</a></li>
                             <li><a href="#Sections" class="MenuItem">Our sections</a></li>
                             <li><a href="#Volunteering" class="MenuItem">Volunteering</a></li>
-                            <!--<li><a href="#Fundraising" class="MenuItem">Fundraising</a></li>-->
                             <li><a href="#Contact" class="MenuItem">Contact us</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
-        </header>        
-        <main>      
+        </header>  
+        
+        <main>   
+            
             <section>
                 <div class="Hero">
                     <div class="Text">
@@ -47,7 +48,7 @@
             </section>
             
             <section>
-            <h1 id="WhatWeDo">What we do</h1>                
+                <h1 id="WhatWeDo">What we do</h1>                
                 <p>4th Morpeth is a very popular Scout Group with over 250 young members in 4 Beaver Colonies, 4 Cub Packs and 4 Scout Troops in Morpeth and Pegswood. In Pegswood our Scout Troop was formed as Sea Scouts which has a nautical theme and more water-based activities.</p>
             </section>
                                     
@@ -55,22 +56,23 @@
                 <h1 id="Sections">Our sections</h1>
                 <ul class="SectionCards ThreeColumn">
                     <li class="Beavers">
-                        <a href="#BeaversInfo" id="DisplayBeaversPopup" data-popup="BeaversInfo" class="Tabs DefaultTab">
+                        <a href="#BeaversInfo" id="DisplayBeaversTab" data-popup="BeaversInfo" class="Tabs DefaultTab">
                             <img src="images/beavers-section-logo-white.png" alt="Beavers" class="SectionLogo">
                         </a>
                     </li>
                     <li class="Cubs">    
-                        <a href="#CubsInfo" id="DisplayCubsPopup" data-popup="CubsInfo" class="Tabs">                                
+                        <a href="#CubsInfo" id="DisplayCubsTab" data-popup="CubsInfo" class="Tabs">                                
                             <img src="images/cubs-section-logo-white.png" alt="Cubs" class="SectionLogo">
                         </a>                            
                     </li>
                     <li class="Scouts">
-                        <a href="#ScoutsInfo" id="DisplayScoutsPopup" data-popup="ScoutsInfo" class="Tabs">
+                        <a href="#ScoutsInfo" id="DisplayScoutsTab" data-popup="ScoutsInfo" class="Tabs">
                             <img src="images/scouts-section-logo-white.png" alt="Scouts" class="SectionLogo">
                         </a>
                     </li>
                 </ul>
                 <div id="BeaversInfo"  class="SectionInformation Beavers TabInfo DefaultTab">
+                    <h2>Beavers</h2>
                     <p>Beavers are boys and girls from age 6 to 8 years old. They will make new friends and try new indoor and outdoor activities.</p>
                     <dl class="SectionList">
                         <dt>Monday @ HQ</dt>
@@ -90,6 +92,7 @@
                     </dl>
                 </div>
                 <div id="CubsInfo" class="SectionInformation Cubs TabInfo">
+                    <h2>Cubs</h2>
                     <p>Cubs are boys and girls from age 8 to 10½ years old. They will learn practical skills while having adventures with friends.</p>
                     <dl class="SectionList">  
                         <dt>Monday @ Pegswood</dt>
@@ -114,6 +117,7 @@
                     </dl>
                 </div>
                 <div id="ScoutsInfo" class="SectionInformation Scouts TabInfo">
+                    <h2>Scouts</h2>
                     <p>Scouts are boys and girls from age 10½ to 14 years old. They will enjoy activities to build confidence, resilience and a sense of adventure.</p>
                     <dl class="SectionList">
                         <dt>Monday Matobo @ HQ<dt>
@@ -141,19 +145,17 @@
                 <div class="CallOut">
                     <h4>Notes</h4>
                     <dl>
-                        <dt>Spaces</dt><dd>can start immediately</dd>
-                        <dt>Limited spaces</dt><dd>may be able to start depending on age, when you want to join etc</dd>
+                        <dt>Spaces</dt><dd>Can start immediately</dd>
+                        <dt>Limited spaces</dt><dd>May be able to start depending on age, when you want to join etc</dd>
                         <dt>Waiting list</dt><dd>Section is full, we have a waiting list of up to 6 months</dd>
                         <dt>Long Waiting list</dt><dd>Section is full, we have a waiting list of greater than 6 months</dd>
                     </dl>
-                </div>
-                
+                </div>                
                 
                 <h2>Other local groups</h2>
                 <p>There is a another Scout Group in Morpeth called 6th Morpeth who meet at the Methodist Church Hall. They have Beavers, Cubs and Scouts on both Wednesdays and Thursdays. We can put you in touch with them.</p>
                 <p>There are further Scout Groups in Alnwick, Ashington, Ellington, Felton, Guidepost, Ponteland, Stakeford and Stannington.</p>
-            </section>
-            
+            </section>            
                 
             <section>                
                 <h1 id="Volunteering">Volunteer</h1>
@@ -171,17 +173,13 @@
                 <p>Volunteer today and help us prepare more young people with Skills for Life.</p>
                 <p>Find out more at <a href="https://www.scouts.org.uk/join/">scouts.org.uk/join/</a> or <a href="#Contact">get in touch</a>.</p>
             </section>
-            
-            <!--<section>
-                <h1 id="Fundraising">Fundraising</h1>
-            </section>-->
-            
+                        
             <section>
                 <h1 id="Contact">Contact us</h1>
                 <p>If you would like to join in, please get in touch.</p>
                 <h2>Email</h2>
                 <p class="CallOut"><a href="mailto:join@4thmorpeth.org.uk">join@4thmorpeth.org.uk</a></p>
-                <h2>Write</h2>
+                <h2>Write or Visit</h2>
                 <p class="CallOut">4th Morpeth Scout Group<br>Staithes Lane<br>Morpeth<br>NE61 1TD</p>
                 <h2>Phone</h2>
                 <p class="CallOut">01670 515785</p>
@@ -198,56 +196,7 @@
             <p>Website by <a href="https://twitter.com/trubru">@trubru</a></p>
         </footer>
         
-        <script type="text/javascript" src="scripts/menu.js"></script>
-        <script>    
-            
-            // TODO: Makethis dynamic to bind the events.
-            ConfigureTab("DisplayBeaversPopup");
-            ConfigureTab("DisplayCubsPopup");
-            ConfigureTab("DisplayScoutsPopup");
-            HidePopupSections();
-            
-            function ConfigureTab(buttonId) {
-                var element = document.getElementById(buttonId);
-                element.addEventListener("click", function(event){ 
-                HidePopupSections();
-                RemoveActiveTabStatus();       
-                document.getElementById(element.getAttribute("data-popup")).style.display="block";    
-                document.getElementById(element.getAttribute("data-popup")).focus();   
-                element.classList.add("Active");    
-                event.preventDefault();
-                });    
-            }
-            
-            function HidePopupSections(){
-             var tabsInfo = document.querySelectorAll(".TabInfo");
-
-                for (var i = 0; i < tabsInfo.length; i++) {
-                    tabsInfo[i].style.display = "none";
-                }   
-            }
-            
-            function RemoveActiveTabStatus(){
-             var tabsInfo = document.querySelectorAll(".Tabs");
-
-                for (var i = 0; i < tabsInfo.length; i++) {
-                    tabsInfo[i].classList.remove("Active");
-                }   
-            }
-            
-            var e = document.querySelector(".TabInfo.DefaultTab");
-            if (e != null)
-            {
-                e.style.display="block";       
-            }
-            
-            
-            var e = document.querySelector(".Tabs.DefaultTab");
-            if (e != null)
-            {
-                e.classList.add("Active");
-            }
-            
-        </script>
+        <script type="text/javascript" src="scripts/menu.js"></script>        
+        <script type="text/javascript" src="scripts/tabs.js"></script>
     </body>
 </html>
