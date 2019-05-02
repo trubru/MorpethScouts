@@ -42,11 +42,6 @@ a {
         color: #460e83;
     }
 
-    a:active,
-    a:focus {
-        background: orange;
-    }
-
 table {
     width: 100%;  
     border-spacing: 0; 
@@ -355,9 +350,19 @@ footer {
 @media screen and (max-width: 550px) {
     
     main {
+        margin-top: 100px;
         padding: 0 10px;
     }
     
+    #MainHeader {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        background: #fff;
+        border-bottom: 2px solid #00A794;
+    }
     #HeaderInner {
         position: relative;
         width: auto;
@@ -465,7 +470,7 @@ footer {
     
     .HideTheMenu #MainMenu {
         max-height: 0;
-        /*transition: max-height 0.15s ease-out;*/
+        transition: max-height 0.15s ease-out;
         overflow: hidden;
         background: #d5d5d5;
     }
