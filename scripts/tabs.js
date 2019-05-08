@@ -7,7 +7,7 @@ function InitialTabSetup() {
 }
 
 function ConfigureTabEvents() { 
-    var tabs = document.querySelectorAll(".Tabs");
+    var tabs = document.querySelectorAll(".tabs");
     for (var i = 0; i < tabs.length; i++) {
         ConfigureTab(tabs[i].id);
     }      
@@ -20,36 +20,36 @@ function ConfigureTab(buttonId) {
     RemoveActiveTabStatus();       
     document.getElementById(element.getAttribute("data-popup")).style.display="block";    
     document.getElementById(element.getAttribute("data-popup")).focus();   
-    element.classList.add("Active");    
+    element.classList.add("active-tab");    
     event.preventDefault();
     });    
 }
 
 function HideAllTabsBoxes() {
-    var tabsInfo = document.querySelectorAll(".TabInfo");
+    var tabsInfo = document.querySelectorAll(".tab-content");
     for (var i = 0; i < tabsInfo.length; i++) {
         tabsInfo[i].style.display = "none";
     }   
 }
 
 function RemoveActiveTabStatus() {
-    var tabsInfo = document.querySelectorAll(".Tabs");
+    var tabsInfo = document.querySelectorAll(".tabs");
     for (var i = 0; i < tabsInfo.length; i++) {
-        tabsInfo[i].classList.remove("Active");
+        tabsInfo[i].classList.remove("active-tab");
     }   
 }
 
 function SetInitialTabState() {
-    var e = document.querySelector(".TabInfo.DefaultTab");
+    var e = document.querySelector(".tab-content.default-tab");
     if (e != null)
     {
         e.style.display="block";       
     }
 
 
-    var e = document.querySelector(".Tabs.DefaultTab");
+    var e = document.querySelector(".tabs.default-tab");
     if (e != null)
     {
-        e.classList.add("Active");
+        e.classList.add("active-tab");
     }
 }

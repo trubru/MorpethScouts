@@ -2,7 +2,7 @@ ConfigureShowHideMenuButtons();
 ConfigureMenuItems();   
 
 function ConfigureMenuItems() {
-    var classname = document.querySelectorAll(".MenuItem");
+    var classname = document.querySelectorAll(".main-menu-item");
     for (var i = 0; i < classname.length; i++) {
         classname[i].addEventListener('click', function(event) {
             HideMenu();
@@ -11,25 +11,25 @@ function ConfigureMenuItems() {
 }
 
 function ConfigureShowHideMenuButtons() {
-    document.getElementById("ShowMenu").addEventListener("click", function(event){ 
+    document.getElementById("show-menu-button").addEventListener("click", function(event){ 
         ShowMenu();
-        document.getElementById("MainMenu").focus();
+        document.getElementById("main-menu").focus();
         event.preventDefault();
     });
 
-    document.getElementById("HideMenu").addEventListener("click", function(event){ 
+    document.getElementById("hide-menu-button").addEventListener("click", function(event){ 
         HideMenu();
-        document.getElementById("ShowMenu").focus();                
+        document.getElementById("show-menu-button").focus();                
         event.preventDefault();
     });
 }            
 
 function HideMenu() {
-    document.getElementById("MenuWrapper").classList.remove("ShowTheMenu");
-    document.getElementById("MenuWrapper").classList.add("HideTheMenu");
+    document.getElementById("main-menu-wrapper").classList.remove("show-menu");
+    document.getElementById("main-menu-wrapper").classList.add("hide-menu");
 }
 
 function ShowMenu() {
-    document.getElementById("MenuWrapper").classList.add("ShowTheMenu");
-    document.getElementById("MenuWrapper").classList.remove("HideTheMenu");
+    document.getElementById("main-menu-wrapper").classList.add("show-menu");
+    document.getElementById("main-menu-wrapper").classList.remove("hide-menu");
 }

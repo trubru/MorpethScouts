@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>    
         <meta charset="utf-8">         
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">  
@@ -13,24 +13,24 @@
         <link rel="shortcut icon" href="images/favicon.ico">
     </head>
     
-    <body id="Top">
+    <body id="page-top">
         
-        <header id="MainHeader">
-            <div id="HeaderInner">
-                <div id="MenuWrapper" class="HideTheMenu">     
-                    <div id="Logo">
-                        <a href="#Top"><img src="images/logo_purple_linear.png" alt="Scouts 4th Morpeth"></a>
+        <header id="page-header">
+            <div id="page-header-inner">
+                <div id="main-menu-wrapper" class="hide-menu">     
+                    <div id="logo">
+                        <a href="#page-top"><img src="images/logo_purple_linear.png" alt="Scouts 4th Morpeth"></a>
                     </div>           
-                    <div id="ToggleMenu">
-                        <a href="#" id="ShowMenu">Show Menu</a>
-                        <a href="#" id="HideMenu">Hide Menu</a>
+                    <div id="toggle-menu-visibility">
+                        <a href="#" id="show-menu-button">Show Menu</a>
+                        <a href="#" id="hide-menu-button">Hide Menu</a>
                     </div>
-                    <nav id="MainMenu">
+                    <nav id="main-menu">
                         <ul tabindex="-1">
-                            <li><a href="#WhatWeDo" class="MenuItem">What we do</a></li>
-                            <li><a href="#Sections" class="MenuItem">Our sections</a></li>
-                            <li><a href="#Volunteering" class="MenuItem">Volunteering</a></li>
-                            <li><a href="#Contact" class="MenuItem">Contact us</a></li>
+                            <li><a href="#what-we-do" class="main-menu-item">What we do</a></li>
+                            <li><a href="#our-sections" class="main-menu-item">Our sections</a></li>
+                            <li><a href="#volunteering" class="main-menu-item">Volunteering</a></li>
+                            <li><a href="#contact" class="main-menu-item">Contact us</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -40,42 +40,42 @@
         <main>   
             
             <section>
-                <div class="Hero">
-                    <div class="Text">
+                <div class="hero">
+                    <div class="hero-content">
                         <p>Skills<br>for<br>life</p>
                     </div>
                 </div>
             </section>
             
             <section>
-                <h1 id="WhatWeDo">What we do</h1>                
+                <h1 id="what-we-do">What we do</h1>                
                 <p>4th Morpeth is a very popular Scout Group with over 250 young members in 4 Beaver Colonies, 4 Cub Packs and 4 Scout Troops in Morpeth and Pegswood.</p>
                 <p>In 2019, our Scout Troop in Pegswood was formed as Sea Scouts which has a nautical theme and more water-based activities.</p>
             </section>
                                     
             <section>
-                <h1 id="Sections">Our sections</h1>
-                <ul class="SectionCards ThreeColumn">
-                    <li class="Beavers">
-                        <a href="#BeaversInfo" id="DisplayBeaversTab" data-popup="BeaversInfo" class="Tabs DefaultTab">
-                            <img src="images/beavers-section-logo-white.png" alt="Beavers" class="SectionLogo">
+                <h1 id="our-sections">Our sections</h1>
+                <ul class="section-cards">
+                    <li class="beavers-section">
+                        <a href="#beavers-information" id="show-beavers-tab" data-popup="beavers-information" class="tabs default-tab">
+                            <img src="images/beavers-section-logo-white.png" alt="Beavers" class="section-logo">
                         </a>
                     </li>
-                    <li class="Cubs">    
-                        <a href="#CubsInfo" id="DisplayCubsTab" data-popup="CubsInfo" class="Tabs">                                
-                            <img src="images/cubs-section-logo-white.png" alt="Cubs" class="SectionLogo">
+                    <li class="cubs-section">    
+                        <a href="#cubs-information" id="show-cubs-tab" data-popup="cubs-information" class="tabs">                                
+                            <img src="images/cubs-section-logo-white.png" alt="Cubs" class="section-logo">
                         </a>                            
                     </li>
-                    <li class="Scouts">
-                        <a href="#ScoutsInfo" id="DisplayScoutsTab" data-popup="ScoutsInfo" class="Tabs">
-                            <img src="images/scouts-section-logo-white.png" alt="Scouts" class="SectionLogo">
+                    <li class="scouts-section">
+                        <a href="#scouts-information" id="show-scouts-tab" data-popup="scouts-information" class="tabs">
+                            <img src="images/scouts-section-logo-white.png" alt="Scouts" class="section-logo">
                         </a>
                     </li>
                 </ul>
-                <div id="BeaversInfo"  class="SectionInformation Beavers TabInfo DefaultTab">
+                <div id="beavers-information"  class="scout-section-information beavers-section tab-content default-tab">
                     <h2>Beavers</h2>
                     <p>Beavers are boys and girls from age 6 to 8 years old. They will make new friends and try new indoor and outdoor activities.</p>
-                    <dl class="SectionList">
+                    <dl class="scout-section-details">
                         <dt>Monday @ HQ</dt>
                         <dd>6.00pm until 7.00pm</dd>
                         <dd>HQ, Staithes Lane</dd>	                        
@@ -92,10 +92,10 @@
                         <dd>Waiting List</dd>                        
                     </dl>
                 </div>
-                <div id="CubsInfo" class="SectionInformation Cubs TabInfo">
+                <div id="cubs-information" class="scout-section-information cubs-section tab-content">
                     <h2>Cubs</h2>
                     <p>Cubs are boys and girls from age 8 to 10½ years old. They will learn practical skills while having adventures with friends.</p>
-                    <dl class="SectionList">  
+                    <dl class="scout-section-details">  
                         <dt>Monday @ Pegswood</dt>
                         <dd>6.45pm until 8.00pm</dd>
                         <dd>Pegswood Primary School</dd>	   
@@ -117,10 +117,10 @@
                         <dd>Limited spaces</dd>                        
                     </dl>
                 </div>
-                <div id="ScoutsInfo" class="SectionInformation Scouts TabInfo">
+                <div id="scouts-information" class="scout-section-information scouts-section tab-content">
                     <h2>Scouts</h2>
                     <p>Scouts are boys and girls from age 10½ to 14 years old. They will enjoy activities to build confidence, resilience and a sense of adventure.</p>
-                    <dl class="SectionList">
+                    <dl class="scout-section-details">
                         <dt>Monday Matobo @ HQ<dt>
                         <dd>7.15pm until 9.00pm</dd>
                         <dd>HQ, Staithes Lane</dd>	   
@@ -143,7 +143,7 @@
                     </dl>
                 </div>
                 
-                <div class="CallOut Footnote">
+                <div class="call-out footnote">
                     <h4>Notes</h4>
                     <dl>
                         <dt>Spaces</dt><dd>Can start immediately</dd>
@@ -159,9 +159,9 @@
             </section>            
                 
             <section>                
-                <h1 id="Volunteering">Volunteer</h1>
-                <div class="Hero Volunteer">
-                    <div class="Text">
+                <h1 id="volunteering">Volunteer</h1>
+                <div class="hero volunteer-hero">
+                    <div class="hero-content">
                         <p>Do more.<br>
                         Share more.<br>
                         Be more.</p>
@@ -176,22 +176,22 @@
             </section>
                         
             <section>
-                <h1 id="Contact">Contact us</h1>
+                <h1 id="contact">Contact us</h1>
                 <p>If you would like to join in, please get in touch.</p>
                 <h2>Email</h2>
-                <p class="CallOut"><a href="mailto:join@4thmorpeth.org.uk">join@4thmorpeth.org.uk</a></p>
+                <p class="call-out"><a href="mailto:join@4thmorpeth.org.uk">join@4thmorpeth.org.uk</a></p>
                 <h2>Write or Visit</h2>
-                <p class="CallOut">4th Morpeth Scout Group<br>Staithes Lane<br>Morpeth<br>NE61 1TD</p>
+                <p class="call-out">4th Morpeth Scout Group<br>Staithes Lane<br>Morpeth<br>NE61 1TD</p>
                 <h2>Phone</h2>
-                <p class="CallOut">01670 515785</p>
+                <p class="call-out">01670 515785</p>
             </section>
         </main>
-        <footer id="SocialFooter">
+        <footer id="footer-social">
             <a href="https://twitter.com/4thmorpeth"><img src="images/appbar.social.twitter.png"></a>
             <a href="https://facebook.com/groups/135854586449250"><img src="images/appbar.social.facebook.png"></a>
         </footer>
-        <footer id="MainFooter">
-            <div id="FooterLogo"><img src="images/scouts_logo_white.png" alt="Scouts"></div>
+        <footer id="footer-main">
+            <div id="footer-scouts-logo"><img src="images/scouts_logo_white.png" alt="Scouts"></div>
             <p>© Copyright 4th Morpeth Scout Group 2019. All Rights Reserved.</p>
             <p>Charity number: 1070498 (England and Wales). </p>
             <p>Website by <a href="https://twitter.com/trubru">@trubru</a></p>

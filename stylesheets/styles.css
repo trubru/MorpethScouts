@@ -87,33 +87,33 @@ footer {
         text-decoration: underline;
     }
 
-#HeaderInner {
+#page-header-inner {
     display: flex;
     width: 1020px;    
     margin: 10px auto;
 }
 
-#MenuWrapper {
+#main-menu-wrapper {
     align-self: flex-end;
 }
 
-#MainHeader #Logo {
+#page-header #logo {
   width: 220px;
 }
 
-#MainHeader #Logo img {
+#page-header #logo img {
     height: 100px;
 }
 
-    #ToggleMenu {
+    #toggle-menu-visibility {
         display: none;
     }
 
-#HeaderInner nav {
+#page-header-inner nav {
     flex: 1;
 }
 
-#HeaderInner nav ul {
+#page-header-inner nav ul {
     display: flex;
     justify-content: flex-end;
     margin: 0 10px 10px 10px;
@@ -121,19 +121,19 @@ footer {
     list-style: none;
 }
 
-#HeaderInner nav ul li {
+#page-header-inner nav ul li {
     margin: 0;
     padding: 0;
 }
 
-#HeaderInner nav ul li a {
+#page-header-inner nav ul li a {
     display: block;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
 }
 
-#SocialFooter {    
+#footer-social {    
     max-width: 1020px;
     margin: 0 auto;
     padding: 0px 20px;
@@ -142,7 +142,7 @@ footer {
     text-align: center;
 }
 
-#MainFooter {
+#footer-main {
     max-width: 1020px;
     margin: 0 auto;
     padding: 20px 20px;
@@ -150,15 +150,15 @@ footer {
     color: #fff;
 }
 
-#FooterLogo {
+#footer-scouts-logo {
     text-align: center;
 }
 
-#FooterLogo img {
+#footer-scouts-logo img {
     width: 100px;
 }
 
-.Hero {
+.hero {
     padding: 50px;
     color: #fff;           
     background-image: url(../images/cub-carrying-leaves.jpg);
@@ -167,11 +167,11 @@ footer {
     background-repeat: no-repeat;
 }
 
-    .Hero.Volunteer{
+    .hero.volunteer-hero{
         background-image: url(../images/explorer-belt-expedition-3.jpg);
     }
 
-    .Hero .Text{
+    .hero .hero-content{
         display: inline-block;
         mix-blend-mode: screen;
         box-sizing: content-box;
@@ -183,149 +183,134 @@ footer {
         font-weight: 900;
     }
 
-.SectionCards {
+.section-cards {
     display: flex;
     margin-bottom: 0;
     padding: 0; 
     list-style: none;
 }
 
-.SectionCards li {
-    margin: 0;
+.section-cards li {
+    margin: 0 3px 0 0;
     padding: 0;
     text-align: center;
 }
 
-.SectionCards .SectionLogo {
+.section-cards .section-logo {
     height: 40px;
 }
 
 
-.SectionCards a { 
+.section-cards a { 
     display: block;
-    padding: 1.5em 0;
+    padding: 1.5em 15px;
     background-color: #ccc;    
     color: #fff;
 }
 
-.SectionCards .Beavers a.Active,
-.SectionCards .Beavers a:hover,
-.SectionCards .Beavers a:active {
+.section-cards .beavers-section a.active-tab,
+.section-cards .beavers-section a:hover,
+.section-cards .beavers-section a:active {
     background-color: #006CDF;
 }
 
-.SectionCards .Cubs a.Active,
-.SectionCards .Cubs a:hover,
-.SectionCards .Cubs a:active  {
+.section-cards .cubs-section a.active-tab,
+.section-cards .cubs-section a:hover,
+.section-cards .cubs-section a:active  {
     background-color: #23A956;
 }
 
-.SectionCards .Scouts a.Active,
-.SectionCards .Scouts a:hover,
-.SectionCards .Scouts a:active  {
+.section-cards .scouts-section a.active-tab,
+.section-cards .scouts-section a:hover,
+.section-cards .scouts-section a:active  {
     background-color: #003A44;
 }
 
-/* TODO: Explorers, Network */
-
-.SectionCards.ThreeColumn li {
-    width: 33.33%;
-}
-
-.SectionCards.FourColumn li {
-    width: 25%;    
-}
-
-.SectionCards.FiveColumn li {
-    width: 20%;
-}
-
-
-.SectionInformation {
+.scout-section-information {
     border-width: 3px;
     border-style: solid;
     padding: 0 25px 25px 25px;
 }
 
-.SectionInformation.Beavers  {
+.scout-section-information.beavers-section  {
     border-color: #006CDF;
 }
 
-.SectionInformation.Cubs  {
+.scout-section-information.cubs-section  {
     border-color: #23A956;
 }
 
-.SectionInformation.Scouts {
+.scout-section-information.scouts-section {
     border-color: #003A44;
 }
 
 /* TODO: Explorers, Network */
 
-    .SectionList dt {
+    .scout-section-details dt {
         display: block;
         font-weight: bold;
         margin: 1em 0 0.5em 0;
         padding: 0;
     }
-    .SectionList dd {
+    .scout-section-details dd {
         display: block;
         margin: 0.25em 0;
         padding: 0;
 
     }
 
-.CallOut {
+.call-out {
     padding-left: 10px;
     border-left: 1px solid #00A794;
 }
 
-    .CallOut.Footnote {
+    .call-out.footnote {
         font-size: 0.8em;
     }
 
 
 @media screen and (max-width: 1020px) {
     
-    #HeaderInner {
+    #page-header-inner {
         width: auto;
         display: block;
     }
     
-    #HeaderInner nav ul {
+    #page-header-inner nav ul {
         justify-content: flex-start;
     }
     
-    .Hero .Text{
+    .hero .hero-content{
         font-size: 1.5em;
         padding: 0 25px;
     }
     
-    .Hero .Text p {
+    .hero .hero-content p {
         margin: 25px 0;
     }
 
 }
 
 @media screen and (max-width: 860px) {
-    .SectionCards {
+    .section-cards {
         font-size: 0.85em;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .SectionCards ul {
+    .section-cards ul {
         display: block;   
     }
-    .SectionCards ul li {
+    .section-cards ul li {
         width: auto;
         margin: 15px 0;
     }
-    .SectionCards ul li a {
+    .section-cards ul li a {
         min-height: auto;
     }
 }
 @media screen and (max-width: 650px) {
-    #HeaderInner nav ul {
+    #page-header-inner nav ul {
         font-size: 0.8em;
     }
 }
@@ -338,59 +323,58 @@ footer {
         padding: 0 10px;
     }
     
-    #MainHeader {
+    #page-header {
         background: #fff;
-        border-bottom: 2px solid #00A794;
     }
-    #HeaderInner {
+    #page-header-inner {
         position: relative;
         width: auto;
       /*  display: flex;*/
     }
-    #HeaderInner #Logo {
+    #page-header-inner #logo {
         align-self: center;
         width: 50%;
     }
     
-        #HeaderInner #Logo img {
+        #page-header-inner #logo img {
             height: 60px;
         }
-    #MenuWrapper {
+    #main-menu-wrapper {
         position: relative;
     }
-    #MenuWrapper nav {
+    #main-menu-wrapper nav {
         background-color: #00A794;
     }
     
-    #HeaderInner nav ul {
+    #page-header-inner nav ul {
         display: block;
         margin-bottom: 0;
         font-size: 1em;
     }
     
-    #HeaderInner nav ul li a {
+    #page-header-inner nav ul li a {
         display: block;
         border-bottom: 1px solid #fff;
         color: #fff;
     }
     
-    #HeaderInner nav ul li a:hover,
-    #HeaderInner nav ul li a:focus {
+    #page-header-inner nav ul li a:hover,
+    #page-header-inner nav ul li a:focus {
         opacity: 0.7;   
     }
     
-    #HeaderInner nav ul li:last-child a {
+    #page-header-inner nav ul li:last-child a {
         border: 0 none;    
     }
     
-    #ToggleMenu {
+    #toggle-menu-visibility {
         position: absolute;
         top: 10px;
         right: 10px;
         font-size: 0.8em;
     }
-    #ShowMenu,
-    #HideMenu {  
+    #show-menu-button,
+    #hide-menu-button {  
         position: relative;  
         display: inline-block;
         padding: 10px 30px 10px 10px;
@@ -400,42 +384,42 @@ footer {
         background-repeat: no-repeat;
         background-size: 26px;
     }
-    #HideMenu {
+    #hide-menu-button {
         background-image: url(../Images/icon-cancel.png);
     }
 
-    #ToggleMenu {
+    #toggle-menu-visibility {
         display: block;
     }
     
-    .ShowTheMenu #MainMenu {
+    .show-menu #main-menu {
         max-height: 500px;
         transition: max-height 0.25s ease-in;
     }
     
-    .ShowTheMenu #HideMenu {
+    .show-menu #hide-menu-button {
         display: inline-block;
     }
     
-    .ShowTheMenu #ShowMenu {
+    .show-menu #show-menu-button {
         display: none;
     }
     
-    .HideTheMenu #MainMenu {
+    .hide-menu #main-menu {
         max-height: 0;
         overflow: hidden;
         background: #d5d5d5;
     }
     
-    .HideTheMenu #HideMenu {
+    .hide-menu #hide-menu-button {
         display: none;
     }
     
-    .HideTheMenu #ShowMenu {
+    .hide-menu #show-menu-button {
         display: inline-block;
     }
     
-    .SectionCards .SectionLogo {
+    .section-cards .section-logo {
         height: 20px;
     }
     
