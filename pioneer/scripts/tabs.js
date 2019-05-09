@@ -18,8 +18,8 @@ function ConfigureTab(buttonId) {
     element.addEventListener("click", function(event){ 
     HideAllTabsBoxes();
     RemoveActiveTabStatus();       
-    document.getElementById(element.getAttribute("data-popup")).style.display="block";    
-    document.getElementById(element.getAttribute("data-popup")).focus();   
+    document.getElementById(element.getAttribute("data-tab-content")).style.display="block";    
+    document.getElementById(element.getAttribute("data-tab-content")).focus();   
     element.classList.add("active-tab");    
     event.preventDefault();
     });    
